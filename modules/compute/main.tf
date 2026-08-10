@@ -49,5 +49,6 @@ resource "aws_instance" "web_server" {
     Name        = "web-server-${var.environment}"
     Environment = var.environment
     ManagedBy   = "Terraform"
+    Project     = var.project
   }
 }

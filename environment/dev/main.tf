@@ -18,6 +18,7 @@ module "compute" {
   source = "../../modules/compute"
 
   environment        = "dev"
+  project            = "terraform-devops"
   instance_type      = "t3.micro"
   subnet_id          = module.networking.public_subnet_id
   security_group_ids = [module.networking.security_group_id]

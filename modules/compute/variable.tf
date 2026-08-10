@@ -25,3 +25,10 @@ variable "key_name" {
   type        = string
   default     = "devops.pem"
 }
+
+variable "project" {
+  description = "Project name"
+  type        = string
+}
+
+
